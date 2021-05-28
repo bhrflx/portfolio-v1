@@ -45,19 +45,19 @@ const Nav = () => {
                     </Link>
                 </ul>
                 <ul className="h-full flex">
-                    <li role='button' className="flex items-center px-6 border-r border-l border-gray-800 hover:bg-gray-400 transition-all sm:hidden">
+                    <li role='button' aria-label="Github" className="flex items-center px-6 border-r border-l border-gray-800 hover:bg-gray-400 transition-all sm:hidden">
                         <a href='https://github.com/bhrflx' target='blank'>
-                            <FaGithub size={25} style={{color: '#262626'}}/>
+                            <FaGithub title="Github Link" size={25} style={{color: '#262626'}}/>
                         </a>
                     </li>
-                    <li role='button' className="flex items-center px-6 border-r border-gray-800 hover:bg-gray-400 transition-all sm:hidden">
+                    <li role='button' aria-label="Instagram" className="flex items-center px-6 border-r border-gray-800 hover:bg-gray-400 transition-all sm:hidden">
                         <a href='https://www.instagram.com/bhrflx/' target='blank'>
-                            <FaInstagram size={25} style={{color: '#262626'}}/>
+                            <FaInstagram title="Instagram Link" size={25} style={{color: '#262626'}}/>
                         </a>
                     </li>
-                    <li role='button' className="flex items-center px-6 border-r border-gray-800 hover:bg-gray-400 transition-all sm:hidden">
+                    <li role='button' aria-label="Mail" className="flex items-center px-6 border-r border-gray-800 hover:bg-gray-400 transition-all sm:hidden">
                         <a href='mailto:felix.bahr@kabelmail.de'>
-                            <FiMail size={25} style={{color: '#262626'}}/>
+                            <FiMail title="Mail Link"size={25} style={{color: '#262626'}}/>
                         </a>
                     </li>
                     <li role='button' onClick={() => setOpen(prevOpen => !prevOpen)} className="hidden sm:flex sm:items-center px-6 border-l border-gray-800 active:bg-gray-400 transition-all">
@@ -84,19 +84,19 @@ const Nav = () => {
                             </li>
                         </Link>
                         <ul className="flex flex-row items-center py-10">
-                            <li role='button' className="flex items-center px-5">
+                            <li role='button' aria-label="Github" className="flex items-center px-5">
                                 <a href='https://github.com/bhrflx' target='blank'>
-                                    <FaGithub size={25} style={{color: '#262626'}}/>
+                                    <FaGithub title="Github Link" size={25} style={{color: '#262626'}}/>
                                 </a>
                             </li>
-                            <li role='button' className="flex items-center px-5">
+                            <li role='button' aria-label="Instagram" className="flex items-center px-5">
                                 <a href='https://www.instagram.com/bhrflx/' target='blank'>
-                                    <FaInstagram size={25} style={{color: '#262626'}}/>
+                                    <FaInstagram title="Instagram Link" size={25} style={{color: '#262626'}}/>
                                 </a>
                             </li>
-                            <li role='button' className="flex items-center px-5">
+                            <li role='button' aria-label="Mail" className="flex items-center px-5">
                                 <a href='mailto:felix.bahr@kabelmail.de'>
-                                    <FiMail size={25} style={{color: '#262626'}}/>
+                                    <FiMail title="Mail Link" size={25} style={{color: '#262626'}}/>
                                 </a>
                             </li>
                         </ul>

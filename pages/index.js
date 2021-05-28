@@ -1,6 +1,5 @@
 import { Suspense, useRef, useState } from 'react'
 import useWindowSize from '../lib/useWindowSize'
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import fs from 'fs'
@@ -32,12 +31,6 @@ export default function Home({ projects }) {
 
   return (
     <>
-      <Head>
-        <title>Felix Bahr</title>
-        <meta name='keywords' content='felix bahr, bahr, design, web development, communication design, portfolio'/>
-        <meta name='description' content='Felix Bahr is a communication designer and web developer based in Constance, Germany.'/>
-      </Head>
-
       <section className="w-full h-[80vh] bg-black overflow-hidden sm:h-[90vh]">
         <Canvas dpr={[1, 1.5]} colorManagement camera={{ position: [0, 0, 1], fov: `${width < 639 ? 90 : 50}` }}>
           <directionalLight position={[0, 0, 3]}/>
@@ -47,7 +40,7 @@ export default function Home({ projects }) {
           </Suspense>
           <Html fullscreen zIndexRange={[40, 0]} style={{pointerEvents: 'none'}}>
             <div className="h-full p-10 mt-64 sm:mt-48 flex flex-col justify-center items-center text-center text-gray-300 font-button">
-              <h3 className="w-1/3 text-xl mb-10 uppercase lg:w-5/6 xl:w-2/3 sm:w-[90vw] sm:mb-5 sm:text-base">I'm Felix. I'm a communication design student and web-developer based in Constance, Germany</h3>
+              <h3 className="w-1/3 text-xl mb-10 uppercase lg:w-5/6 xl:w-2/3 sm:w-[90vw] sm:mb-5 sm:text-base">I'm Felix. I'm a communication design student and frontend-developer based in Constance, Germany</h3>
               <BsArrowDown size={30} style={{color: '#D4D4D4'}}/>
             </div>
           </Html>
@@ -55,7 +48,7 @@ export default function Home({ projects }) {
         </Canvas>
       </section>
 
-      <section className="min-h-screen w-full bg-gradient-to-b from-black via-gray-900 to-gray-800">
+      <section className="w-full bg-gradient-to-b from-black via-gray-900 to-gray-800">
         <div className="w-full pt-48">
           <h1 className="text-gray-300 text-5xl text-center uppercase mb-10">Selected Projects</h1>
           <div className="grid gap-3 grid-cols-[repeat(auto-fit,256px)] place-content-center place-items-center mb-16 mx-10">
