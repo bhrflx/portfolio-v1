@@ -9,7 +9,7 @@ export default {
         site_name: "Felix Bahr",
         images: [
             {
-              url: '/og-image.jpg',
+              url: 'https://felixbahr.com/og-image.jpg',
               width: 1200,
               height: 630,
               alt: 'Project Selection of Felix Bahr',

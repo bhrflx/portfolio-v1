@@ -11,6 +11,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Html, Stars } from '@react-three/drei'
 import Welcome from '../components/Welcome'
 import { BsArrowDown } from 'react-icons/bs'
+import { NextSeo } from 'next-seo'
 import CookieConsent from 'react-cookie-consent'
 
 export default function Home({ projects }) {
@@ -27,10 +28,18 @@ export default function Home({ projects }) {
     })
     return null
   }
+
+  const SEO = {
+    title: "Home",
+    openGraph: {
+        title: "Felix Bahr | Home"
+    }
+}
   
 
   return (
     <>
+      <NextSeo {...SEO}/>
       <section className="w-full h-[80vh] bg-black overflow-hidden sm:h-[90vh]">
         <Canvas dpr={[1, 1.5]} colorManagement camera={{ position: [0, 0, 1], fov: `${width < 639 ? 90 : 50}` }}>
           <directionalLight position={[0, 0, 3]}/>
