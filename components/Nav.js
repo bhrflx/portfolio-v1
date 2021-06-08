@@ -56,7 +56,7 @@ const Nav = () => {
                         </a>
                     </li>
                     <li role='button' aria-label="Mail" className="flex items-center px-6 border-r border-gray-800 hover:bg-gray-400 transition-all sm:hidden">
-                        <a href='mailto:felix.bahr@kabelmail.de'>
+                        <a href='mailto:hello@felixbahr.com'>
                             <FiMail title="Mail Link"size={25} style={{color: '#262626'}}/>
                         </a>
                     </li>
@@ -95,7 +95,7 @@ const Nav = () => {
                                 </a>
                             </li>
                             <li role='button' aria-label="Mail" className="flex items-center px-5">
-                                <a href='mailto:felix.bahr@kabelmail.de'>
+                                <a href='mailto:hello@felixbahr.com'>
                                     <FiMail title="Mail Link" size={25} style={{color: '#262626'}}/>
                                 </a>
                             </li>

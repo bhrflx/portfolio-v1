@@ -19,7 +19,7 @@ export default function Imprint() {
                             Felix Bahr
                         </li>
                         <li>
-                            felix.bahr@kabelmail.de
+                            hello@felixbahr.com
                         </li>
                         <li>
                             Sankt-Johann-Gasse 7
