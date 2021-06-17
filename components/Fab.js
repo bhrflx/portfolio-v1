@@ -25,7 +25,7 @@ const Fab = () => {
         /*<div className="fixed z-50 right-5 bottom-5 h-16 w-16 flex justify-center items-center bg-gray-800 rounded-full shadow-lg cursor-pointer transition-all transform hover:scale-105">
             <FaCat size={25} style={{color: '#c7c7c7', marginBottom: '0.2rem', marginRight: '0.1rem'}}/>
         </div>*/
-        <div className="fixed z-50 w-[50vw] right-5 bottom-5 flex flex-row justify-end items-center">
+        <div className="fixed z-50 w-[50vw] right-5 bottom-5 flex flex-row justify-end items-center sm:right-2 sm:bottom-2">
             <Popover className="relative">
                 <Popover.Button ref={setReferenceElement} className="z-20 h-16 w-16 inline-flex justify-center items-center bg-gray-800 rounded-full shadow-lg cursor-pointer transition-all transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                     <FaCat size={25} style={{color: '#c7c7c7', marginBottom: '0.2rem', marginRight: '0.1rem'}}/>
