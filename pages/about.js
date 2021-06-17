@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 
 export default function About() {
@@ -7,7 +6,8 @@ export default function About() {
         title: 'About',
         openGraph: {
             title: 'Felix Bahr | About'
-        }
+        },
+        canonical: 'https://felixbahr.com/about',
     }
     return (
         <>
@@ -18,7 +18,18 @@ export default function About() {
                 </div>
                 <section className="max-w-xl sm:w-[90vw]">
                     <h3 className="font-bold">About</h3>
-                    <p className="mb-5">Hi, I’m Felix! I’m currently studying communication design in the 6th semester at the HTWG in Constance. I love exploring everything digital but also have a great affinity for analogue photography. My favourite fields in design are UI/UX, Webdevelopment and Typedesign. </p>
+                    <p className="mb-5">Hi, I’m Felix! I’m currently studying communication design 
+                    in the 6th semester at the HTWG in Constance. I love exploring everything digital 
+                    but have a great affinity for analogue photography as well. My favourite fields in 
+                    design are UI/UX, Webdevelopment and Typedesign. <br/>
+                    In case you wondered why that button in the bottom right corner is there, I also 
+                    really like cats, so shoot me a message on Instagram if you want to receive the 
+                    best cat videos I can find every day. Believe me, you won't regret it. My next 
+                    favourite thing after cats are old analogue cameras and I have developed an 
+                    unhealthy habit of collecting as many as my bank account allows. You will find 
+                    me carrying around at least one of them at all times. If you're interested in 
+                    the images I produce with my analogue and digital treasures, click <a href="https://www.instagram.com/vagabond.bear/" className="underline" target="blank">here</a>
+                    </p>
                     <h3 className="font-bold">CV</h3>
                     <ul>
                         <li className="mb-5">
@@ -44,9 +55,6 @@ export default function About() {
                         </li>
                         <li>
                             <p>Blender</p>
-                        </li>
-                        <li>
-                            <p>Maya (Basics)</p>
                         </li>
                         <li>
                             <p>Unity Engine</p>
@@ -79,7 +87,7 @@ export default function About() {
                             <p>English (C2)</p>
                         </li>
                         <li>
-                            <p>(Currently trying to learn Russian)</p>
+                            <p>Currently learning Russian</p>
                         </li>
                     </ul>
                 </section>

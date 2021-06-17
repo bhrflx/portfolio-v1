@@ -43,7 +43,7 @@ const Fab = () => {
                         ref={setPopperElement}
                         style={styles.popper}
                         {...attributes.popper}
-                        className="w-screen max-w-sm px-3 py-2 bg-gray-100 ring-1 rounded-lg ring-black ring-opacity-5 shadow-lg">
+                        className="w-screen max-w-sm px-3 py-2 bg-gray-100 ring-1 rounded-lg ring-black ring-opacity-5 shadow-lg sm:max-w-[60vw]">
                         <p className="text-gray-800">{catFact}</p>
                     </Popover.Panel>
                 </Transition>

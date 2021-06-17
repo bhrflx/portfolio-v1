@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Layout from '../components/Layout'
+import Fab from '../components/Fab'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
 import * as gtag from '../lib/gtag'
@@ -23,6 +24,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <DefaultSeo {...SEO}/>
       <Layout>
+        <Fab/>
         <Component {...pageProps} />
       </Layout>
     </>

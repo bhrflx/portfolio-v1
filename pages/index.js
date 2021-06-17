@@ -33,7 +33,8 @@ export default function Home({ projects }) {
     title: "Home",
     openGraph: {
         title: "Felix Bahr | Home"
-    }
+    },
+    canonical: 'https://felixbahr.com',
 }
   
 

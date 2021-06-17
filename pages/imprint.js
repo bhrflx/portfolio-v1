@@ -5,7 +5,8 @@ export default function Imprint() {
         title: "Imprint",
         openGraph: {
             title: "Felix Bahr | Imprint"
-        }
+        },
+        canonical: 'https://felixbahr.com/imprint',
     }
     return (
         <>

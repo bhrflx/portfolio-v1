@@ -14,7 +14,9 @@ export default function Work({ projects }) {
         title: "Work",
         openGraph: {
             title: "Felix Bahr | Work"
-        }
+        },
+        canonical: 'https://felixbahr.com/work',
+
     }
     const tags = ['Project', 'Experiment', 'Graphic Design', 'UI/UX', 'Development', 'Type Design','Visual Identity'];
 
